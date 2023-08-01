@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumer</title>
+    <script src="https://kit.fontawesome.com/6bf4d6296c.js" crossorigin="anonymous"></script>
+    
+
+    <link href="img/favicon.ico" rel="icon">
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
+    <!-- MDB css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/card_style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <!--  cart css data -->
+    <link rel="stylesheet" href="css/cart.css">
+
+    <!-- footer css -->
+    <!--  footer css data -->
+    <link rel="stylesheet" href="css/footer_css.css">
+    <!--  skeleton css data -->
+    <link rel="stylesheet" href="css/skeleton.css">
+    <!--  consumer css data -->
+    <link rel="stylesheet" href="css/consumer.css">
+    <style>
+        /* * {box-sizing: border-box;} */
+        .imageConatiner {
+            font-family: Verdana, sans-serif;
+        }
+
+        .mySlides {
+            /* display: none; */
+            width: 100%;
+            height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        /*
+        img {
+            vertical-align: middle;
+            max-height: 100%;
+        }*/
+
+         .slideshow-container {
+            position: relative;
+            margin: auto; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 80%;
+        }
+    </style>
+</head>
+
+<body>
+	<div class="navb">
+                <div class="logo">
+            		<img class="logoImg" style="height: 100%;" src="http://bitly.ws/DNmR" alt="Logo">
+        		</div>
+        		<div class='navb_space'></div>
+        			<button type="button" class="icon-button">
+                        <i class="checkout_btn fa fa-2x fa-shopping-cart" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown">
+                        <a onclick="myFunction()" class="dropbtn"><img style="height: 100%;"
+                                src="https://shorturl.at/brNW6" alt="profile"></a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="/Innovative/profile">View Profile</a>
+                            <a href="/Innovative/">Logout</a>
+                        </div>
+                    </div>
+                    <div id="Username"> {{Name}} </div>
+           </div>
+    <div class="products_data">
+        <div class="cover">
+            <img style="height: 100%;width: 100%;" src="http://bitly.ws/DNC5" alt="Cover">
+            </div>
+            
+            <div class="categ">
+                <div class="categHead">
+                    <a name="Category1" onclick="scrollPage(this)">Appliances</a>
+                </div>
+                <div class="categHead">
+                    <a name="Category2" onclick="scrollPage(this)">Clothing</a>
+                </div>
+                <div class="categHead">
+                    <a name="Category3" onclick="scrollPage(this)">Cosmetic</a>
+                </div>
+                <div class="categHead">
+                    <a name="Category4" onclick="scrollPage(this)">Electronics</a>
+                </div>
+                <div class="categHead">
+                    <a name="Category5" onclick="scrollPage(this)">Sports</a>
+                </div>
+            </div>
+        
+        <div class="items">
+            <!-- Category code Start -->
+            <div class="container-fluid pt-5 pb-3">
+                <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span id="Category1"
+                        class="pr-3">Appliances</span></h2>
+                <div class="row px-xl-5">
+                    <!-- {{Appliances card code}} -->
+
+                </div>
+            </div>
+            <!-- Category code Ends -->
+
+            <!-- Category code Start -->
+            <div class="container-fluid pt-5 pb-3">
+            	<h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span id="Category2"
+                        class="pr-3">Clothing</span></h2>
+                <div class="row px-xl-5">
+                    <!-- {{Clothing card code}} -->
+
+                </div>
+            </div>
+            <!-- Category code Ends -->
+
+            <!-- Category code Start -->
+            <div class="container-fluid pt-5 pb-3">
+                <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span id="Category3"
+                        class="pr-3">Cosmetic</span></h2>
+                <div class="row px-xl-5">
+                    <!-- {{Cosmetic card code}} -->
+
+                </div>
+            </div>
+            <!-- Category code Ends -->
+
+            <!-- Category code Start -->
+            <div class="container-fluid pt-5 pb-3">
+                <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span id="Category4"
+                        class="pr-3">Electronics</span></h2>
+                <div class="row px-xl-5">
+                    <!-- {{Electronics card code}} -->
+
+                </div>
+            </div>
+            <!-- Category code Ends -->
+
+            <!-- Category code Start -->
+            <div class="container-fluid pt-5 pb-3">
+                <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span id="Category5"
+                        class="pr-3">Sports</span></h2>
+                <div class="row px-xl-5">
+                    <!-- {{Sports card code}} -->
+
+                </div>
+            </div>
+            <!-- Category code Ends -->
+        </div>
+        </div>
+    </div>
+
+    <div style="display: none;" class="cart_data">
+        
+            
+        <div class="main-area">
+            <div class="Cart-Container">
+                <!-- heading Section -->
+                <div class="Header">
+
+                    <h3 class="Heading"><span style="cursor: pointer;" class="back_btn">&emsp;&lt;&emsp;</span>Shopping
+                        Cart</h3>
+                    <h5 class="Remove_all Action">Remove all</h5>
+                </div>
+                <!-- code for single item starts -->
+                <div class="item-list">
+
+                </div>
+                <!-- code for single item ends -->
+                <!-- checkout section -->
+                <hr>
+                <div class="checkout">
+
+                    <div class="total">
+                        <div>
+                            <div class="Subtotal">Sub-Total</div>
+                            <div class="items_cnt">0 items</div>
+                        </div>
+                        <div class="total-amount">Rs. 0</div>
+                    </div>
+                    <button class="place_order button">Checkout</button>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div style="display: none;" class="success_msg wrapperAlert">
+
+        <div class="contentAlert">
+
+            <div class="topHalf">
+
+                <p><svg viewBox="0 0 512 512" width="100" title="check-circle">
+                        <path
+                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" />
+                    </svg></p>
+                <h1>Congratulations !</h1>
+
+                <ul class="bg-bubbles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="bottomHalf">
+                <h3>Your Order has been placed successfully</h3>
+                <button class="to_home" id="alertMO">Go to Home Page</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Footer code Starts -->
+    <div class="Footer">
+        <footer class="footer-distributed">
+
+
+            <div class="footer-center">
+
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>B Block, Hiramani Hostel</span> Ahemdabad, Gujarat</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+918563012898</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">support@kbsupplychain.com</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    <i>KB Supply Chain Management</i> is a leading provider of supply chain solutions to businesses in
+                    various industries. We are committed to delivering high-quality services to our clients while
+                    maintaining the highest levels of integrity, professionalism, and transparency.
+                </p>
+
+                <div class="footer-icons">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
+                </div>
+
+            </div>
+            <div class="footer-right">
+
+                
+    				<img class="footer_logo" style="height: 100%;" src="http://bitly.ws/DNmR" alt="Logo">
+                    
+
+            </div>
+
+        </footer>
+        <!-- Footer End -->
+    </div>
+    <!--  main js data -->
+    <script src="Javascript/main.js" charset="utf-8"></script>
+    <!--  skeleton js data -->
+    <script src="Javascript/skeleton.js"></script>
+
+    <script>
+        var products = {};
+        var port = "7070";
+        var consumer_data = { "user_id": "" }
+        var product_mfg_list={}
+        //port number
+        //consumer_data       
+        //product_mfg_list
+        //console.log(consumer_data);
+        
+
+        $("body").on("click", ".ATC", function () {
+            var curr_product_id = $(this).attr("value");
+            var curr_product_price = Number($("#" + curr_product_id).attr("price"))
+            var curr_product_name = $("#" + curr_product_id).attr("name");
+
+            var curr_product = {
+                "img_name": curr_product_name,
+                "product_name": curr_product_name,
+                "unit_price": curr_product_price,
+                "count": 1,
+                "total_price": curr_product_price,
+                "consumer_id": consumer_data["user_id"],
+                "product_id": curr_product_id,
+                "mfg_id": product_mfg_list[curr_product_id][0][1]
+            }
+            console.log(curr_product);
+            products[curr_product_id] = curr_product;
+        });
+
+
+
+
+
+        // var products = {
+        //     "Mobile": {
+        //         "img_name": "cover",
+        //         "product_name": "Mobile",
+        //         "unit_price": 1000,
+        //         "count": 1,
+        //         "total_price": 1000
+
+        //     },
+        //     "TV": {
+        //         "img_name": "cover",
+        //         "product_name": "TV",
+        //         "unit_price": 10000,
+        //         "count": 1,
+        //         "total_price": 10000
+        //     }
+        // }
+        function getProductHTML(product, img_name, product_name, unit_price, count, total_price) {
+            console.log(product_name);
+            var mfg_names = "";
+            product_mfg_list[product].forEach(function(name){
+            	mfg_names+="<option value='"+name[1]+"'>"+name[0]+"</option>";
+            })
+            var item_str = "<div class='Cart-Items'>" +
+                "<div class='image-box'>" +
+                "<img src='https://shorturl.at/cszPU' style={{ height='100px' }} />" +
+                "</div>" +
+                "<div class='about'>" +
+                "<h1 class='title'>" + product_name + "</h1>" +
+                "<h3 class='subtitle'>Rs. " + unit_price + "/unit</h3>" +
+                "<!-- <img src='Image/logo.png' style={{ height='20px' }} /> -->             "+
+                "</div>" +
+                "<select pid='"+product+"' name='mfg_id' class='mfg_select form-select'>" +
+                mfg_names+
+                "</select>" +
+                "<div class='counter'>" +
+                "<a value='" + product + "' class='plus btn'>+</a>" +
+                "<div class='count'>" + count + "</div>" +
+                "<a value='" + product + "' class='minus btn'>-</a>" +
+                "</div>" +
+                "<div class='prices'>" +
+                "<div class='amount'>Rs. " + total_price + "</div>" +
+                "<div value='" + product + "' class='remove'><u>Remove</u></div>" +
+                "</div>" +
+                "</div>";
+            return item_str;
+        }
+        $(".mfg_select").oninput = function () {
+        	products[this.pid]["mfg_id"] = this.innerHTML;        	
+        }
+        function updateProducts() {
+            var items_str = "";
+            var total_amt = 0;
+            
+            if(consumer_data["phone_no"].length!=10 || consumer_data["street"].length==0 || consumer_data["city"].length==0 || consumer_data["state"].length==0 || consumer_data["zipcode"].length==0)
+            {
+            	$('.place_order').css("cursor","not-allowed");
+            	$('.place_order').css("background","gray");
+            	$('.place_order').prop("disabled",true);
+            	$('.place_order').prop("title","Please Update Address details first..")
+            }
+        	else if(Object.keys(products).length==0)
+    		{
+        		$('.place_order').css("cursor","not-allowed");
+            	$('.place_order').css("background","gray");
+            	$('.place_order').prop("disabled",true);
+            	$('.place_order').prop("title","Please Add At least one product in Cart")
+    		}
+        	else 
+        		{
+	        		$('.place_order').css("cursor","pointer");
+	            	$('.place_order').css("background","linear-gradient(to bottom right, #B8D7FF, #8EB7EB)");
+	            	$('.place_order').prop("disabled",false);
+	            	$('.place_order').prop("title","Select To Place Order")
+        		}
+            
+            for (var product in products) {
+                var img_name = products[product]["img_name"];
+                var product_name = products[product]["product_name"];
+                var unit_price = products[product]["unit_price"];
+                var count = products[product]["count"];
+                var total_price = products[product]["total_price"];
+                total_amt += total_price;
+                items_str += getProductHTML(product, img_name, product_name, unit_price, count, total_price);
+            }
+            $(".item-list").html(items_str);
+            $(".items_cnt").html(Object.keys(products).length + " items");
+            $(".total-amount").html("Rs. " + total_amt);
+        }
+        function removeProduct(product_id) {
+            delete products[product_id];
+            updateProducts();
+        }
+
+        $("body").on("click", ".to_home", function () {
+            products = {}
+            $(".cart_data").css("display", "none");
+            $(".products_data").css("display", "block");
+            $(".success_msg").css("display", "none");
+
+        });
+
+        function show_success() {
+            $(".cart_data").css("display", "none");
+            $(".products_data").css("display", "none");
+            $(".success_msg").css("display", "block");
+
+        }
+        
+        
+
+        function checkout() {
+        	let xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost:" + port + "/Innovative/consumer");
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            var product_arr = Object.values(products);
+            xhr.send(JSON.stringify(product_arr));
+
+            show_success();
+        	/*
+        	if(consumer_data["phone_no"].length>0 && consumer_data["street"].length>0 && consumer_data["city"].length>0 && consumer_data["state"].length>0 && consumer_data["zipcode"].length>0)
+       		{
+        		let xhr = new XMLHttpRequest();
+                xhr.open("POST", "http://localhost:" + port + "/Innovative/consumer");
+                xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                var product_arr = Object.values(products);
+                xhr.send(JSON.stringify(product_arr));
+
+                show_success();
+        		
+                
+       		}
+        	else 
+       		{
+        		sessionStorage.setItem("requestType", "warning");
+        		var xhttp = new XMLHttpRequest();
+        		xhttp.open("POST", "MyServlet", true);
+        		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        		xhttp.send("myKey=" + myValue);
+        		window.location.href = "/Innovative/profile";
+        		/*
+        		let xhr = new XMLHttpRequest();
+                xhr.open("POST", "http://localhost:" + port + "/Innovative/profile");
+                xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                xhr.setRequestHeader("requestType", "warning");
+                
+                xhr.onload = function() {
+                	  if (xhr.status === 200) {
+                	    console.log(xhr.responseText);
+                	  } else {
+                	    console.error('Request failed.  Returned status of ' + xhr.status);
+                	  }
+                	};
+
+                xhr.send();
+       		}*/
+        }
+        $("body").on("click", ".minus", function () {
+            var curr_product_id = $(this).attr("value");
+            var curr_count = products[curr_product_id]["count"];
+            if (curr_count == 1) removeProduct(curr_product_id);
+            else {
+                products[curr_product_id]["count"] -= 1;
+                products[curr_product_id]["total_price"] -= products[curr_product_id]["unit_price"]
+            }
+            updateProducts();
+        });
+        $("body").on("click", ".plus", function () {
+            var curr_product_id = $(this).attr("value");
+            products[curr_product_id]["count"] += 1;
+            products[curr_product_id]["total_price"] += products[curr_product_id]["unit_price"]
+            updateProducts();
+        });
+        $("body").on("click", ".remove", function () {
+            var curr_product_id = $(this).attr("value");
+            removeProduct(curr_product_id);
+            updateProducts();
+        });
+        $(".Remove_all").click(function () {
+            products = {}
+            updateProducts();
+        });
+
+        $("body").on("click", ".place_order", function () {
+        	checkout();
+        	
+        		
+            
+        });
+        $("body").on("click", ".checkout_btn", function () {
+        	
+        	
+        	
+            $(".cart_data").css("display", "block");
+            $(".products_data").css("display", "none");
+            updateProducts();
+        });
+        $("body").on("click", ".back_btn", function () {
+            $(".cart_data").css("display", "none");
+            $(".products_data").css("display", "block");
+        });
+        // console.log(products);
+    </script>
+
+    <script>
+        let slideIndex = 0;
+        var slides = $(".mySlides");
+        let totalSlides =  $(".mySlides *").length;
+        
+        Slides.forEach(function(sld){
+        	sld.hide();
+        	//sld.css("opacity","0");
+        })
+        //Slides[0].css("opacity","1");
+        Slides[0].show();
+        setTimeout(showSlides, 2000);
+        //showSlides();
+
+        function showSlides() {
+            //let slides = document.getElementsByClassName("mySlides");
+            
+            $(slides[slideIndex]).fadeOut();
+            $(slides[slideIndex]).hide();
+            slideIndex =  (slideIndex + 1)%totalSlides;
+            $(slides[slideIndex]).show();
+            $(slides[slideIndex]).fadeIn();
+            /*let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";*/
+            //setTimeout(showSlides, 10000);
+        }
+    </script>
+</body>
+
+</html>

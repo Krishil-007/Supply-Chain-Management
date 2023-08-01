@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacturer</title>
+    <script src="https://kit.fontawesome.com/6bf4d6296c.js" crossorigin="anonymous"></script>
+
+    <!-- <link href="img/favicon.ico" rel="icon"> -->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- MDB CSS and JS -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" /> -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/card_style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--  footer css data -->
+    <link rel="stylesheet" href="css/footer_css.css">
+    <!--  skeleton css data -->
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <!-- Table links -->
+    <!--  Tables css data -->
+    <link rel='stylesheet'
+        href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700&amp;display=swap'>
+    <link rel="stylesheet" href="css/Tables.css">
+
+
+</head>
+
+<body>
+    <div class="navb">
+                <div class="logo">
+            		<img class="logoImg" style="height: 100%;" src="http://bitly.ws/DNmR" alt="Logo">
+        		</div>
+        		<div class='navb_space'></div>
+        			<button type="button" class="icon-button">
+                        <i class="checkout_btn fa fa-2x fa-shopping-cart" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown">
+                        <a onclick="myFunction()" class="dropbtn"><img style="height: 100%;"
+                                src="https://shorturl.at/brNW6" alt="profile"></a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="/Innovative/profile">View Profile</a>
+                            <a href="/Innovative/">Logout</a>
+                        </div>
+                    </div>
+                    <div id="Username"> {{Name}} </div>
+           </div>
+    </div>
+    <div class="main-area">
+        <ul class="nav nav-tabs nav-justified mb-3" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="ex3-tab-1" data-mdb-toggle="tab" href="#ex3-tabs-1" role="tab"
+                    aria-controls="ex3-tabs-1" aria-selected="true"> Pending Orders </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="ex3-tab-2" data-mdb-toggle="tab" href="#ex3-tabs-2" role="tab"
+                    aria-controls="ex3-tabs-2" aria-selected="false"> Inventory</a>
+            </li>
+        </ul>
+        <!-- Tabs navs -->
+
+        <!-- Tabs content -->
+        <div class="tab-content" id="ex2-content">
+            <div class="tab-pane fade show active" id="ex3-tabs-1" role="tabpanel" aria-labelledby="ex3-tab-1">
+                <article class="leaderboard">
+                    <main class="leaderboard__profiles">
+                        <!-- {{Order details}} -->
+                    </main>
+                </article>
+            </div>
+            <!-- partial -->
+
+
+        </div>
+        <div style="position: relative;" class="tab-pane fade" id="ex3-tabs-2" role="tabpanel" aria-labelledby="ex3-tab-2">
+            <div class="item-list tiles">
+                
+            </div>
+            <div class="options">
+                    <div style="display: none;" class="newItemForm">
+                        <input class="form-style" placeholder="Item Name" type="text" name="newItemName" id="newItemName">
+                        <input class="form-style" placeholder="Item Price" type="text" name="newItemPrice" id="newItemPrice">
+                        <input class="form-style" placeholder="Quantity" type="text" name="newItemQty" id="newItemQty">
+                        <select class="form-style form-select" name="newItemCateg" id="newItemCateg">  
+                                              	
+                        </select>
+                        
+                    </div>
+                    <div class="alert alert-success">
+                    	&#10004;&emsp;Saved
+                	</div>
+                    <div class="itemButtons">
+                        <button style="display: none;" class="newItemTickButton newItemButton" type="submit">&#10004;</button>
+                        <div class="saveButton"><i class="fa-solid fa-floppy-disk"></i></div>
+                        <div class="newItemAddButton newItemButton">+</div>
+                    </div>
+                </div>
+            
+
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer code Starts -->
+    <div class="Footer">
+        <footer class="footer-distributed">
+
+
+            <div class="footer-center">
+
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>B Block, Hiramani Hostel</span> Ahemdabad, Gujarat</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+918563012898</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">support@kbsupplychain.com</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    <i>KB Supply Chain Management</i> is a leading provider of supply chain solutions to businesses in
+                    various industries. We are committed to delivering high-quality services to our clients while
+                    maintaining the highest levels of integrity, professionalism, and transparency.
+                </p>
+
+                <div class="footer-icons">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
+                </div>
+
+            </div>
+            <div class="footer-right">
+
+                
+    				<img class="footer_logo" style="height: 100%;" src="http://bitly.ws/DNmR" alt="Logo">
+                    
+
+            </div>
+
+        </footer>
+        <!-- Footer End -->
+    </div>
+    <script>
+        var products = {};
+	    var port = "7070";
+	    var manufacturer_data = {"user_id":""}
+	    var item_data = {}
+	    var categ_data = ["Appliances","Electronics","Clothing","Cosmetic","Sports"]
+	    //port number
+	    //manufacturer_data 
+	    //item_data
+	     
+	    var categ_html = "";
+	    categ_data.forEach(function(ele){
+	    	categ_html += "<option>"+ele+"</option>";
+	    })
+	    $("#newItemCateg").html(categ_html);
+	    
+	    function getItemHTML(itemName,itemQty,itemID) {
+            var item_str = "<div class='tile' id='"+itemID+"' style='background-color: #0E86D4;color: white;'>"
+                +"<h2 class='UN'>"+itemName+"</h2>"
+                +"<hr>"
+                +"<h3 class='UN'>"+itemQty+"</h3>"
+                +"<div value='"+itemID+"' class='tile_crcl'><i class='fa-sharp fa-solid fa-trash'></i></div>"
+            +"</div>";
+            return item_str;
+        }
+	    
+	    function updateItems() {
+            var items_str = "";
+            var total_amt = 0;
+            for (var itemID in item_data) {
+                var itemQty = item_data[itemID]["itemQty"];
+                var itemName = item_data[itemID]["itemName"];
+                var itemName = item_data[itemID]["itemName"];
+                items_str += getItemHTML(itemName,itemQty,itemID);
+            }
+            $(".item-list").html(items_str);
+        }
+	    updateItems();
+	    $(document).ready(function(){
+	    	$("body").on("click", ".tile_crcl", function () {
+	    		var curr_item_id = $(this).attr("value");
+	    		delete item_data[curr_item_id];
+	            updateItems();
+        	});
+	    	
+
+	    	
+	    	$("body").on("click", ".saveButton", function () {
+	    		$(".alert-success").show().delay(3000).hide(0);
+        	});
+	    	
+	    	$("body").on("click", ".btn-success", function () {
+	    		
+	    		$("#"+$(this).val()).html("Order Confirmed");
+	    		$("#"+$(this).val()).addClass("confirmed")
+                $("#"+$(this).val()).delay(1000).hide(0);
+
+	        	
+	    		
+	    		let xhr = new XMLHttpRequest();
+	        	xhr.open("POST", "http://localhost:"+port+"/Innovative/manufacturer");
+	        	xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+	        	xhr.setRequestHeader("Request-Type", 1);
+	        	xhr.setRequestHeader("OrderID",this.value);
+	        	xhr.send();
+        	});
+	    	
+	    $("body").on("click", ".newItemTickButton", function () {
+		    	var newItemName = $("#newItemName").val();
+		    	var newItemQty = $("#newItemQty").val();
+		    	var newItemPrice = $("#newItemPrice").val();
+		    	var newItemCateg = $("#newItemCateg").val();
+		    	var newItemID;
+		    	if(newItemQty==0)
+		    		{
+		    			//For Removing Product
+		    		}
+		    	
+		    	var currItemName = Object.values(item_data).map(item => item["itemName"]);
+		    	var currItemID = Object.keys(item_data);
+		    	if(!currItemName.includes(newItemName))
+		    	{
+		    		
+		  
+		    		 newItemID =  Math.floor(10000 + Math.random() * 90000).toString();
+		    		 while(newItemID in currItemID)newItemID =  Math.floor(10000 + Math.random() * 90000).toString();
+		    		// New Product
+		    		 newItemID = "P"+newItemID;
+		    		
+		    	}
+		    	else 
+		    		{
+		    			newItemID = currItemID[currItemName.indexOf(newItemName)];
+		    			
+		    		}
+		    	
+		    	item_data[newItemID] = {"itemName":newItemName,"itemQty":newItemQty,"itemID":newItemID,"itemPrice":newItemPrice,"itemCateg":newItemCateg};
+		    	updateItems();
+		    	
+		    	$(".newItemForm").toggleClass("activeForm");
+		    	$(".newItemTickButton").toggleClass("activeForm");
+		        $(".newItemAddButton").toggleClass("rotate");
+        	});
+	    
+	    $("body").on("click", ".saveButton", function () {
+	    	let xhr = new XMLHttpRequest();
+        	xhr.open("POST", "http://localhost:"+port+"/Innovative/manufacturer");
+        	xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        	xhr.setRequestHeader("Request-Type", 2);
+        	var item_arr = Object.values(item_data);
+        	xhr.send(JSON.stringify(item_arr));
+        	
+        	$(".newItemForm").removeClass("activeForm");
+	        $(".newItemAddButton").removeClass("rotate");
+    	});
+	    });
+    </script>
+    <!--  skeleton js data -->
+    <script src="Javascript/skeleton.js"></script>
+</body>
+
+</html>

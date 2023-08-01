@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css"  href="css/Login_css.css">
+  <style src="css/Login_css.css"></style>
+  <!-- login css data -->
+ 
+
+</head>
+
+<body>
+  <div id="back">
+    <canvas id="canvas" class="canvas-back"></canvas>
+    <div class="backRight">
+    </div>
+    <div class="backLeft">
+    </div>
+  </div>
+
+  <div id="slideBox">
+    <div class="topLayer">
+      <div class="left">
+        <div class="content">
+          <h2>Sign Up</h2>
+          <form id="form-signup" method="post" action="auth">
+          <input type="hidden" name="auth_type" value="signup">
+            <div class="form-element form-stack">
+              <label for="email" class="form-label">Email</label>
+              <input required="required" id="email" type="email" name="email">
+            </div>
+            <div class="form-element form-stack">
+              <label for="firstname-signup" class="form-label">Firstname</label>
+              <input required="required"  id="firstname-signup" type="text" name="firstname">
+            </div>
+            <div class="form-element form-stack">
+              <label for="lastname-signup" class="form-label">Lastname</label>
+              <input required="required"  id="lastname-signup" type="text" name="lastname">
+            </div>
+            <div class="form-element form-stack">
+              <label for="password-signup" class="form-label">Password</label>
+              <input required="required"  id="password-signup" type="password" name="password">
+            </div>
+            <label for="type-signup" class="form-label">Type : </label>
+              <br>
+            <div style="display: flex;justify-content: space-evenly;flex-direction: row;" class="form-check form-element form-stack">
+              
+              
+              <input checked class="form-check-input" type="radio" id="radio-consumer" name="user_type" value="Consumer">
+              <label class="form-check-label" for="radio-consumer">Consumer</label><br>
+              <input class="form-check-input" type="radio" id="radio-manufacturer" name="user_type" value="Manufacturer">
+              <label class="form-check-label" for="radio-manufacturer">Manufacturer</label><br>
+              
+            </div>
+            <div class="form-element form-submit">
+              <button id="signUp" class="signup" type="submit" name="signup">Sign up</button>
+              <button id="goLeft" type="button" class="signup off">Log In</button>
+            </div>
+                        
+          </form>
+        </div>
+      </div>
+      <div class="right">
+        <div class="content">
+          <h2>Login</h2>
+          <form id="form-login" method="post" action="auth">
+          <input type="hidden" name="auth_type" value="login">
+            <div class="form-element form-stack">
+              <label for="username-login" class="form-label">User-ID / E-mail</label>
+              <input  required="required" id="username-login" type="text" name="username">
+            </div>
+            <div class="form-element form-stack">
+              <label for="password-login" class="form-label">Password</label>
+              <input  required="required" id="password-login" type="password" name="password">
+            </div>
+            <div class="form-element form-submit">
+              <button id="logIn" class="login"  type="submit" name="login">Log In</button>
+              <button  id="goRight" class="login off" type="button" name="signup">Sign Up</button>
+            </div>
+            <!-- {{Signup_error}} -->
+            <!-- {{Signup_complete}} -->
+            <!-- {{Login_error}} -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.3/paper-full.min.js'></script>
+  <script src="Javascript/Login_js.js"></script>
+  
+  <!-- login js data -->
+  
+
+</body>
+
+</html>

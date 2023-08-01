@@ -1,0 +1,6 @@
+{
+	"dep_port" : "4000",
+	"db_port" : "7070",
+	"db_username" : "root",
+	"db_password" : "root"
+}

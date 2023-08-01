@@ -1,0 +1,173 @@
+body {
+	margin: 0;
+	color: #2e323c;
+	background: #f5f6fa;
+	position: relative;
+	height: 100%;
+}
+
+
+.logo{
+	height: 80%;
+	text-align: left;
+	flex: 2 1 auto;
+	padding: 0rem 2rem;
+	
+}
+
+#Username {
+  width: 10%;
+  flex: 2 1 auto;
+  text-align: right;
+  padding: 0rem 2rem;
+}
+
+.navb{
+	width: 100%;
+align-items: center;
+display: flex;
+}
+.account-settings .user-profile {
+	margin: 0 0 1rem 0;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+.account-settings .user-profile .user-avatar {
+	margin: 0 0 1rem 0;
+}
+
+.account-settings .user-profile .user-avatar img {
+	width: 90px;
+	height: 90px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+}
+
+.account-settings .user-profile h5.user-name {
+	margin: 0 0 0.5rem 0;
+}
+
+.account-settings .user-profile h6.user-email {
+	margin: 0;
+	font-size: 0.8rem;
+	font-weight: 400;
+	color: #9fa8b9;
+}
+
+.account-settings .about {
+	margin: 2rem 0 0 0;
+	text-align: center;
+}
+
+.account-settings .about h5 {
+	margin: 0 0 15px 0;
+	color: #007ae1;
+	font-size: 2rem;
+}
+
+.account-settings .about p {
+	font-size: 1.2rem;
+}
+
+.form-control {
+	border: 1px solid #cfd1d8;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-size: 1.3rem;
+	background: #ffffff;
+	color: #2e323c;
+}
+
+.card {
+	background: #ffffff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 0;
+	margin-bottom: 1rem;
+}
+
+.central {
+	margin: 7rem;
+	position: relative;
+}
+
+#warningBox {
+	position: absolute;
+	right: 6rem;
+	top: 2rem;
+	z-index: 1;
+	font-size: 1.5rem;
+}
+
+.card-body {
+	padding: 3rem;
+}
+
+.user-name {
+	font-size: 2.5rem;
+}
+
+.user-email {
+	font-size: 1.2rem !important;
+}
+
+.text-primary {
+	font-size: 2.5rem;
+}
+
+.form-group label {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.profile_btn .text-center {
+	display: flex;
+	gap: 3rem;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+.profile_btn .text-center button {
+	font-size: 1.2rem;
+}
+
+/* Media Queries */
+@media ( max-width : 480px) {
+	#Username {
+  font-size: 2rem;
+  color: white;
+  font-weight: bolder;
+  font-family: 'Ebrima';
+  width: 10%;
+  flex: 2 1 auto;
+  text-align: right;
+  padding: 0rem 2rem;
+}
+.logo{
+	height: 80%;
+padding: 0rem 2rem;
+flex: 2 1 auto;
+}
+
+
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media ( min-width : 481px) and (max-width: 767px) {
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media ( min-width : 768px) and (max-width: 1024px) {
+}
+
+/* Media Query for Laptops and Desktops */
+@media ( min-width : 1025px) and (max-width: 1280px) {
+}
+
+/* Media Query for Large screens */
+@media ( min-width : 1281px) {
+}

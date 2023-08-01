@@ -1,0 +1,249 @@
+.main-area {
+    margin: 0 !important;
+    padding: 2rem !important;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF) !important;
+    /* height: 100vh !important; */
+    height: fit-content !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.Cart-Container {
+    margin: 3rem;
+    width: 80%;
+    height: 90%;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+}
+
+.item-list {
+    overflow-y: auto;
+    height: 60vh;
+    margin: 0.5rem;
+}
+
+.Header {
+    margin: auto;
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Heading {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: #2F3841;
+}
+
+.Action {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #E44C4C;
+    cursor: pointer;
+    border-bottom: 1px solid #E44C4C;
+}
+
+.Cart-Items {
+    margin: auto;
+    width: 90%;
+    height: fit-content;
+    align-items: center;
+    margin: 1rem auto auto;
+    display: grid;
+	grid-template-columns: 1fr 6fr 3fr 1fr 2fr;
+	gap: 4rem;
+}
+
+.image-box {
+    text-align: center;
+    
+}
+.image-box img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.23);
+    
+}
+
+.about {
+    /*height: 100%;
+    width: 75%;*/
+}
+
+.title {
+    font-size: 2rem;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    color: #202020;
+}
+
+.subtitle {
+    line-height: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #909090;
+}
+
+.mfg_select{
+	font-size: 1.5rem;
+}
+
+.counter {
+    display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 1rem;
+}
+
+.btn {
+    width: 25px;
+height: 30px;
+border-radius: 50%;
+background-color: #d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 18px;
+font-family: 'Open Sans';
+font-weight: 900;
+color: #202020;
+cursor: pointer;
+align-content: center;
+}
+
+.count {
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: 900;
+    color: #202020;
+}
+
+.prices {
+    height: 100%;
+}
+
+.amount {
+    padding-top: 20px;
+    font-size: 26px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    color: #202020;
+}
+
+.save {
+    padding-top: 5px;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #1687d9;
+    cursor: pointer;
+}
+
+.remove {
+    padding-top: 5px;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #E44C4C;
+    cursor: pointer;
+}
+
+hr {
+    width: 66%;
+    float: right;
+    margin-right: 5%;
+}
+
+.checkout {
+    float: right;
+    margin-right: 5%;
+    width: 28%;
+}
+
+.total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Subtotal {
+    font-size: 22px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: #202020;
+}
+
+.items_cnt {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    color: #909090;
+    line-height: 10px;
+}
+
+.total-amount {
+    font-size: 36px;
+    font-family: 'Open Sans';
+    font-weight: 900;
+    color: #202020;
+}
+.button {
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #202020;
+}
+
+
+/* Media Queries */
+@media ( max-width : 480px) {
+.Cart-Container {
+  margin: 0;
+  width: 100%;
+  
+}
+.Cart-Items {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5rem auto;
+}
+.checkout {
+  float: none;
+  margin-right: 5%;
+  width: auto;
+}
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media ( min-width : 481px) and (max-width: 767px) {
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media ( min-width : 768px) and (max-width: 1024px) {
+}
+
+/* Media Query for Laptops and Desktops */
+@media ( min-width : 1025px) and (max-width: 1280px) {
+}
+
+/* Media Query for Large screens */
+@media ( min-width : 1281px) {
+}
+
+
+
